@@ -4,7 +4,7 @@ interface IBankAccount
     string AgencyNumber{get; init;}
     string AccountNumber{get; init;}
     string Cpf{get; init;}
-    decimal Value{get; init;}
+    decimal DepositValue{get; init;}
 
     void DepositInSavingsAccount();
     void DepositInCheckingAccount();
