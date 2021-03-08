@@ -1,4 +1,5 @@
 ﻿using System;
+using CpfExtension;
 
 namespace BankAccount
 {
@@ -6,7 +7,12 @@ namespace BankAccount
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            bool cpfValidation = CpfValidation.ValidateCpf("07582635621");
+
+            if(cpfValidation == true)
+                Console.WriteLine("Valid CPF!");
+            else
+                Console.WriteLine("Invalid CPF!");
         }
     }
 }
